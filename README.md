@@ -1,5 +1,6 @@
 # File And Folder Tool
 
-Copy the file path and directory of the current file or all open files
+Copy the file path and directory of the current file or all open files.
+Copy file(s).
 
 ![copy](./images/copy.png)
