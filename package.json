@@ -2,8 +2,8 @@
   "name": "file-and-folder-tool",
   "displayName": "File And Folder Tool",
   "description": "Copy the file path and directory of the current file or all open files",
-  "version": "0.0.6",
-  "publisher": "YongXianYin",
+  "version": "0.0.7",
+  "publisher": "YongXian Yin",
   "icon": "images/icon.png",
   "license": "MIT",
   "repository": {
@@ -60,6 +60,14 @@
         {
           "command": "fft.copyAllOpenDirectoryPaths",
           "group": "fftOthers@3"
+        },
+        {
+          "command": "fft.copyFile",
+          "group": "fftOthers@4"
+        },
+        {
+          "command": "fft.copyAllOpenFiles",
+          "group": "fftOthers@5"
         }
       ]
     },
@@ -87,6 +95,14 @@
       {
         "command": "fft.copyAllOpenDirectoryPaths",
         "title": "Copy All Open Directory Paths"
+      },
+      {
+        "command": "fft.copyFile",
+        "title": "Copy File"
+      },
+      {
+        "command": "fft.copyAllOpenFiles",
+        "title": "Copy All Open Files"
       }
     ]
   },
