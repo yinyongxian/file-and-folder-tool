@@ -5,7 +5,7 @@ const child_process = require('child_process');
 
 // https://github.com/yinyongxian/file-and-folder-tool
 // https://code.visualstudio.com/api
-// https://marketplace.visualstudio.com/manage/publishers/file-and-folder-tool
+// https://marketplace.visualstudio.com/manage/publishers/yongxianyin
 
 // Publish: vsce package --> vsce publish
 
