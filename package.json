@@ -2,7 +2,7 @@
   "name": "file-and-folder-tool",
   "displayName": "File And Folder Tool",
   "description": "Copy the file path and directory of the current file or all open files",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "publisher": "YongXianYin",
   "icon": "images/icon.png",
   "license": "MIT",
