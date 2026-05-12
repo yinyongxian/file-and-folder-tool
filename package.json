@@ -50,15 +50,15 @@
       ],
       "fftOthers": [
         {
-          "command": "fft.copyAllFileName",
+          "command": "fft.copyAllOpenFileNames",
           "group": "fftOthers@1"
         },
         {
-          "command": "fft.copyAllFileNameWithoutExtension",
+          "command": "fft.copyAllOpenFileNamesWithoutExtension",
           "group": "fftOthers@2"
         },
         {
-          "command": "fft.copyAllDirectoryPath",
+          "command": "fft.copyAllOpenDirectoryPaths",
           "group": "fftOthers@3"
         }
       ]
@@ -77,16 +77,16 @@
         "title": "Copy Directory Path"
       },
       {
-        "command": "fft.copyAllFileName",
-        "title": "Copy All File Name"
+        "command": "fft.copyAllOpenFileNames",
+        "title": "Copy All Open File Names"
       },
       {
-        "command": "fft.copyAllFileNameWithoutExtension",
-        "title": "Copy All File Name Without Extension"
+        "command": "fft.copyAllOpenFileNamesWithoutExtension",
+        "title": "Copy All Open File Names Without Extension"
       },
       {
-        "command": "fft.copyAllDirectoryPath",
-        "title": "Copy All Directory Path"
+        "command": "fft.copyAllOpenDirectoryPaths",
+        "title": "Copy All Open Directory Paths"
       }
     ]
   },

@@ -18,7 +18,7 @@ function activate(context) {
   const copyToClipboard = async (text) => {
     await vscode.env.clipboard.writeText(text);
     const lines = text.split("\n");
-    if (lines.length = 1) {
+    if (lines.length === 1) {
       vscode.window.showInformationMessage(`Copied: ${text}`);
     } else {
       vscode.env.clipboard.writeText(lines[0].trim() + ", and more...");
@@ -51,7 +51,7 @@ function activate(context) {
       }
     },
     {
-      command: 'fft.copyAllFileName',
+      command: 'fft.copyAllOpenFileNames',
       callback: () => {
         const paths = GetPaths();
         const filenames = paths.map(p => path.basename(p)).filter((v, i, a) => a.indexOf(v) === i).sort();
@@ -59,7 +59,7 @@ function activate(context) {
       }
     },
     {
-      command: 'fft.copyAllFileNameWithoutExtension',
+      command: 'fft.copyAllOpenFileNamesWithoutExtension',
       callback: () => {
         const paths = GetPaths();
         const filenames = paths.map(p => path.parse(p).name).filter((v, i, a) => a.indexOf(v) === i).sort();
@@ -67,7 +67,7 @@ function activate(context) {
       }
     },
     {
-      command: 'fft.copyAllDirectoryPath',
+      command: 'fft.copyAllOpenDirectoryPaths',
       callback: () => {
         const paths = GetPaths();
         const filenames = paths.map(p => path.dirname(p)).filter((v, i, a) => a.indexOf(v) === i).sort();
@@ -84,7 +84,7 @@ function activate(context) {
 
 function GetPaths() {
 	const fsPaths = vscode.workspace.textDocuments.map(doc => doc.uri.fsPath);
-	const documentFsPaths = vscode.window.visibleTextEditors.map(eidtor => eidtor.document.uri.fsPath);
+	const documentFsPaths = vscode.window.visibleTextEditors.map(editor => editor.document.uri.fsPath);
 	const tabPaths = vscode.window.tabGroups.all.flatMap(({ tabs }) => tabs.map(tab => {
 		if (tab.input instanceof vscode.TabInputText || tab.input instanceof vscode.TabInputNotebook) {
 			return tab.input.uri.fsPath;
