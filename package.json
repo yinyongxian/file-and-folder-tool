@@ -33,7 +33,6 @@
         {
           "command": "fft.copyFileName",
           "group": "2_copy@1"
-
         },
         {
           "command": "fft.copyFileNameWithoutExtension",
